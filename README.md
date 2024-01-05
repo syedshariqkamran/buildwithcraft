@@ -1,8 +1,10 @@
 Build with Craft - Construction and Design Solutions
 Introduction
 Build with Craft is a dynamic construction and design organization that brings your dreams to life. Our team utilizes a combination of modern technologies and traditional craftsmanship to deliver aesthetically pleasing and functional buildings. From 3D designs to on-site visits, we offer a comprehensive suite of facilities to enhance the entire design and construction process.
-![screenshot_20240105110931](https://github.com/syedshariqkamran/buildwithcraft/assets/89725524/296dc0f3-7732-41cb-98f9-98e2fd614983)
 
+
+
+![screenshot_20240105110931](https://github.com/syedshariqkamran/buildwithcraft/assets/89725524/80c388d5-78c0-49ff-b5a5-6ba69834202c)
 
 Technologies Used
 HTML
@@ -56,11 +58,3 @@ We'd love to hear from you! Contact us for any inquiries or to discuss how we ca
 A website for civil engineer  pictures
 
 
-![screenshot_20240105111109](https://github.com/syedshariqkamr![screenshot_20240105111240](https://github.co![screenshot_20240105111325](https://github.com/syedshar![screenshot_20240105111336](https://github.com/syedshariqkamran/buildwithcraft/assets/89725524/406d914b-9d7b-4195-aae2-6e751cbf7cb6)
-iqkamran/buildwithcraft/assets/89725524/28cc0fca-225f-45ef-bd48-a5837b28a127)
-m/syedshariqkamran/buildwithcraft/assets/89725524/59ebf5ca-c6c4-4117-bdde-e320dd22e0ac)
-an/buildwithcraft/assets/89725524/bd936257-0ff1-4e9a-952a-0d4c6f619a4f)
-![screenshot_20240105111124](https://github.com/s![screenshot_2024![screenshot_20240105111240](https://github.com/sy![screenshot_20240105111305](https://github.com/syedshariqkamran/buildwithcraft/assets/89725524/fa451c93-8f04-4c64-a6d0-f8ff177c6858)
-edshariqkamran/buildwithcraft/assets/89725524/61adb2a7-6696-4ba1-a423-bb07aca32833)
-0105111222](https://github.com/syedshariqkamran/buildwithcraft/assets/89725524/8022d215-0b88-4124-8fd6-c6e199cd0728)
-yedshariqkamran/buildwithcraft/assets/89725524/071018bc-ca6b-4ea7-98f3-15c70714b9d9)
