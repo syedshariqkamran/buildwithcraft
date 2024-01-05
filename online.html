@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Meta Tags -->        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Online Services</title>
+        <meta name="description" content="A Template by Denis Griu"/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content="Denis Griu"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="apple-touch-icon" sizes="57x57" href="fab/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="fab/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="fab/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="fab/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="fab/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="fab/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="fab/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="fab/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="fab/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="fab/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="fab/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="fab/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="fab/favicon-16x16.png">
+        <link rel="manifest" href="fab/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="fab/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+       <!--  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">  -->
+
+        <!-- Web Fonts -->        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700' rel='stylesheet' type='text/css'/>
+
+        <!-- Css Global Compulsory -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/> 
+
+        <!-- Css Implementing Plugins -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>                          
+        <link rel="stylesheet" type="text/css" href="css/revolution/style.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/revolution/extralayers.css" media="screen"/> 
+        <link rel="stylesheet" type="text/css" href="css/revolution/settings.css" media="screen"/>
+        <link rel="stylesheet" href="css/owl.carousel.css"/>
+        <link rel="stylesheet" href="css/owl.theme.css"/>         
+        <link rel="stylesheet" href="css/cubeportfolio.min.css"/>
+        <link rel="stylesheet" href="css/jquery.mmenu.css"/>
+
+        <!-- Css Theme -->           
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<style >
+   #blink-text {
+  font-size: 8px;
+  animation: blinkAnimation 1s infinite; /* Apply the blink animation */
+  color: darkred; /* Initial color */
+  font-size: 38px;
+  margin-top: 20px;
+}
+
+/* Additional CSS rules for color change */
+#blink-text:hover {
+  color: blue; /* Color change on hover */
+  animation: none; /* Disable blink animation on hover */
+}
+
+
+
+
+/* Remove the underline from navbar links */
+     .header-nav {  
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-color: transparent;
+  border-radius: 0;
+  margin: 0;
+}
+
+#header {
+  width: 100%;
+  z-index: 9999;
+}
+
+.head-title h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  line-height: 31px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #fff;
+  font
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.navbar {
+  border: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;  
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 25px 25px;
+  font-size: 18px;
+  line-height: 20px;  
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+/* Gallery Section Styles */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* Maintain a 4:3 aspect ratio */
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.gallery-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  border-color: #3498db;
+}
+
+/* Add other styles as needed */
+
+/* WhatsApp Button Styles */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-btn a {
+  display: block;
+  background-color: #25d366;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 0;
+}
+@keyframes blinkAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#blink-text {
+  font-size: 8px;
+  animation: blinkAnimation 1s infinite; /* Apply the blink animation */
+  color: darkred; /* Initial color */
+  font-size: 38px;
+  margin-top: 25px;
+}
+
+/* Additional CSS rules for color change */
+#blink-text:hover {
+  color: blue; /* Color change on hover */
+  animation: none; /* Disable blink animation on hover */
+}
+
+
+/* Add other styles for the footer as needed */
+
+</style>
+
+
+ <body> 
+
+        <!--Start Preloader-->
+        <div id="preloader">
+            <div class="preloader-container">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Preloader-->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default header-nav" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Logo -->        
+                    <a class="navbar-brand" href="index.html">
+    <img src="img/logonew.png" class="img-responsive" alt="Build with Craft">
+    <h4 style="margin-top: 5px; font-size: 0.8em; color: #333; font-weight: bold; font-family: 'Great Vibes', cursive; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);">Build with Craft</h4>
+</a>       
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>                                                                            
+                       <!-- <li><a href="#projects">Projects</a></li>     -->               
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services  <i class="fa fa-angle-down fa-lg"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                                     <li><a href="online.html">ONLINE SERVICES</a></li>
+                                    <li><a href="site.html">SITE VISITS</a></li>
+                                    <li><a href="int.html">INTERIOR DESIGN</a></li>
+                                    <li><a href="exterior.html">EXTERIOR DESIGN</a></li>
+                                                                   
+                                </ul>
+                        </li>
+                       <li><a href="contact.html">Contact</a></li>  
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+    <section class="breadcrumb_section text-center section_padding"
+        style="background-image: ">
+        <ul class="breadcrumb">
+            <li id="blink-text">Online Services</li>
+
+
+        </ul>
+         <p style="margin-left: 20px; margin-top: 20px; font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; font-size: 16px; text-align: justify;">
+
+   Build with Craft extended services to online customers, providing a seamless and interactive platform for remote
+            architectural and interior design solutions. Through our online facilities, we cater to clients from
+            various locations, offering them the same level of personalized attention and design expertise as our
+            in-person clients.
+
+            For our online customers, we have developed a user-friendly and intuitive website that serves as a
+            one-stop destination for all their building design needs. Our website showcases a portfolio of our previous
+            projects, giving clients a glimpse of our design capabilities and the quality of work we deliver.
+            Additionally, we provide detailed information about the services we offer, including building design,
+            interior design, and exterior design for different configurations like 1 BHK, 2 BHK, 3 BHK, and 4 BHK
+            residences.
+
+</p>
+
+    </section>
+
+             <section class="gallery-sec">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- First Row - 3 Columns -->
+                <div class="gallery-item" data-title="Image 1">
+                    <img src="img/online/2.jpg" alt="">
+                </div>
+                <div class="gallery-item" data-title="Image 2">
+                   <img src="img/online/6.jpg" alt="">
+                </div>
+                <div class="gallery-item" data-title="Image 3">
+                    <img src="img/online/7.jpg" alt="">
+                </div>
+                <div class="gallery-item" data-title="Image 3">
+                   <img src="img/online/8.jpg" alt="">
+                </div>
+
+                <!-- Second Row - 3 Columns -->
+                <div class="gallery-item" data-title="Image 4">
+                    <img src="img/online/9.jpg" alt="">
+                </div>
+                <div class="gallery-item" data-title="Image 5">
+                   <img src="img/online/a.jpg" alt="">
+                </div>
+                <div class="gallery-item" data-title="Image 6">
+                    <img src="img/online/b.jpg" alt="">
+                </div>
+                <div class="gallery-item" data-title="Image 6">
+                    <img src="img/online/e.jpg" alt="">
+                </div>
+                <div class="gallery-item" data-title="Image 6">
+                    <img src="img/online/d.jpg" alt="">
+                </div>
+
+                <!-- Additional images go here in the same format -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer-big">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About Us Information -->
+                    <div class="col-md-3 col-sm-6">                           
+                        <div class="f-logo">
+                            <h2>Our<br>Offices</h2>                                                                    
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Posts -->
+                    
+
+                    <!-- Latest Tweet -->
+                    
+
+                    <!-- Recent Works -->
+                    <div class="col-md-6 col-sm-6 f-inner">   
+                            <div class="col-sm-1">
+                                <i class="fa fa-map-marker fa-lg"></i> 
+                            </div>
+                            <div class="col-sm-11">
+                                <strong>India</strong>
+                                <div class="f-space"></div>
+                                <address><h4>BUILD WITH CRAFT</h4>
+                                    Near Biryani  corner,<br>
+                                     C Block Noida Sector 2<br>
+                                     Uttar Pradesh 201301 <br>
+                                     Contact Us:)<br>                    
+                                    <abbr title="Phone"></abbr> 9069540183 <br/>
+                                    <abbr title="Phone"></abbr> 9304728819 <br/>
+                                    <br/>
+                                
+                                </address>
+                            </div>      
+                        </div>   
+                        <div class="col-md-3 col-sm-6">
+    
+  <div class="col-md-3 col-sm-6" style="width: 550px; margin-left: -250px;">
+    <div class="f-logo">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.518065851976!2d77.31298715918759!3d28.584231136174473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce458d6ac53e7%3A0xf8e779b0ae11f1a8!2sC%20Block%2C%20Sector%202%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1700936143780!5m2!1sen!2sin" width="550" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+             </div>
+            </div>
+        </div>   
+
+<!-- Footer -->
+<!-- ... Existing HTML code ... -->
+ <div id="footer">
+            <div class="container">   
+                <div class="row">                                                         
+                    <!-- Copyright -->                                                       
+                    <div class="col-sm-6 col-md-6 f-copyright">                        
+                        <span>© Copyright Interior - All Rights Reserved</span>                        
+                    </div>                      
+                    <div class="col-sm-6 col-md-6">
+                        <!-- Social Icons -->                              
+                        <ul class="footer-social">
+                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-skype fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div>        
+        <!-- End Footer -->  
+
+
+
+
+
+              <script src="js/jquery-1.11.1.min.js"></script>                    
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.themepunch.tools.min.js"></script>   
+        <script src="js/jquery.themepunch.revolution.min.js"></script> 
+        <script src="js/jquery.cubeportfolio.min.js"></script>      
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/moderniz.js"></script>    
+        <script src="js/jquery.sticky.js"></script>   
+        <script src="js/jquery.mmenu.min.js"></script>                     
+       <!--  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>      -->
+        <script src="js/app.js"></script> 
+    </body>
+    </html>
